@@ -18,33 +18,52 @@
 <body class="bg-BackGroundColor font-Manrope">
 
   <main class="container">
-    <nav class="flex md:border-b border-BorderColor h-28 justify-between items-center">
-      <div>
-        <img src="./img/quaran-Logo.svg" alt="" srcset="" class="w-28 h-6">
-      </div>
-      <div class="md:gap-8 md:flex hidden">
-        <div>Home</div>
-        <div>About</div>
-        <div>Translation</div>
-        <div>Donate</div>
-      </div>
-      <div>
-        <button class="md:text-base md:inline-block hidden">Log in</button>
-        <button class="bg-teal-900 h-12 w-28 text-base text-white ml-8 rounded md:inline-block hidden">Sign up</button>
-      </div>
-      <button class="md:hidden mt-[-4px]"><i class="ri-menu-line"></i></button>
-    </nav>
-  </main>
-  <section class="bg-hero h-screen">
-    <div class="container">
-      <div class="md:w-7/12 mx-auto md:mt-20 w-11/12">
+    <section id="nav">
+      <nav class="flex items-center justify-between md:border-b border-BorderColor h-28">
         <div>
-          <h1 class="md:text-6xl text-center md:leading-tight font-bold text-primary-500 text-4xl">Make
-            self-purification by
-            reading <span class="border-4 rounded-50 border-secondary-500 px-1 pb-1">Quran</span></h1>
+          <img src="./img/quaran-Logo.svg" alt="" srcset="" class="h-6 w-28">
+        </div>
+        <div class="hidden md:gap-8 md:flex">
+          <div>Home</div>
+          <div>About</div>
+          <div>Translation</div>
+          <div>Donate</div>
         </div>
         <div>
-          <p class="md:text-lg md:text-center md:mt-6 text-BorderColor text-center text-sm mt-3">Make self-purification
+          <button class="hidden md:text-base md:inline-block">Log in</button>
+          <button class="hidden h-12 ml-8 text-base text-white bg-teal-900 rounded w-28 md:inline-block">Sign
+            up</button>
+        </div>
+        <button class="md:hidden mt-[-4px]"><i class="ri-menu-line"></i></button>
+      </nav>
+    </section>
+  </main>
+
+
+  <section id="Discount" class="absolute hidden w-1/2 top-1/4 bg-primary-500 left-1/4">
+    <div class="flex flex-col p-3 text-white border border-red-300 h-2/3">
+      <i class="text-4xl ri-close-line" id="close"></i>
+      <div>
+        <h1>We Have Special Discount</h1>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quisquam quo nemo inventore soluta qui
+          accusantium ad voluptates delectus! Atque impedit ex velit quisquam voluptatem? Itaque obcaecati atque ab
+          debitis!</p>
+      </div>
+    </div>
+
+  </section>
+  <section class="h-screen bg-hero">
+    <div class="container">
+      <div class="w-11/12 mx-auto md:w-7/12 md:mt-20">
+        <div>
+          <h1 class="text-4xl font-bold text-center md:text-6xl md:leading-tight text-primary-500">Make
+            self-purification by
+            reading <span class="px-1 pb-1 border-4 rounded-50 border-secondary-500">Quran</span></h1>
+        </div>
+        <div>
+          <p class="mt-3 text-sm text-center md:text-lg md:text-center md:mt-6 text-BorderColor">Make self-purification
             by reading Quran.
             This
             website is all
@@ -53,49 +72,52 @@
         </div>
         <div class="flex justify-center gap-5 mt-9">
           <button
-            class="w-40 h-14 rounded-md bg-secondary-500 text-lg flex items-center justify-center gap-2 font-semibold text-primary-500"><img
+            class="flex items-center justify-center w-40 gap-2 text-lg font-semibold rounded-md h-14 bg-secondary-500 text-primary-500"><img
               src="./img/ICONS/Books.svg" alt="" srcset="">Read Quran</button>
           <button
-            class="w-40 h-14 border border-black rounded-md text-lg flex items-center justify-center gap-2 font-semibold text-primary-500">
+            class="flex items-center justify-center w-40 gap-2 text-lg font-semibold border border-black rounded-md h-14 text-primary-500">
             <img src="./img/ICONS/Audio1.svg" alt="" srcset="">Quran Audio</button>
         </div>
       </div>
-      <div class="md:flex md:gap-7 md:mt-16 md:mx-auto flex gap-2 mt-9 md:h-auto">
+      <div class="flex gap-2 md:flex md:gap-7 md:mt-16 md:mx-auto mt-9 md:h-auto">
         <div class=""><img src="./img/img1.svg" alt="" srcset="" class=""></div>
         <div class=""><img src="./img/img2.svg" alt="" srcset="" class=""></div>
       </div>
     </div>
 
+
+
     <!-- page2 -->
     <div
-      class="bg-primary-500 md:w-full md:h-52 md:flex md:flex-row md:justify-center md:items-center mb-36 flex flex-col items-center gap-6">
-      <div class="flex justify-center flex-col md:w-64 md:border-r md:border-BorderColor mt-10">
+      class="flex flex-col items-center gap-6 bg-primary-500 md:w-full md:h-52 md:flex md:flex-row md:justify-center md:items-center mb-36">
 
-        <h2 class="md:text-5xl flex justify-center text-secondary-500 font-bold text-3xl">30</h2>
+      <div class="flex flex-col justify-center md:w-64 md:border-r md:border-BorderColor">
+
+        <h2 class="flex justify-center text-3xl font-bold md:text-5xl text-secondary-500">30</h2>
         <p class="md:text-lg flex justify-center md:mt-2.5 text-white text-base">Quran’s Chapters</p>
 
       </div>
-      <div class=" flex justify-center flex-col md:w-64 md:border-r md:border-BorderColor">
+      <div class="flex flex-col justify-center md:w-64 md:border-r md:border-BorderColor">
 
-        <h2 class="md:text-5xl flex justify-center text-secondary-500 font-bold text-3xl">114</h2>
+        <h2 class="flex justify-center text-3xl font-bold md:text-5xl text-secondary-500">114</h2>
         <p class="md:text-lg flex justify-center md:mt-2.5 text-white text-base">Quran’s Surahs</p>
 
       </div>
-      <div class=" flex justify-center flex-col md:w-64 md:border-r md:border-BorderColor">
+      <div class="flex flex-col justify-center md:w-64 md:border-r md:border-BorderColor">
 
-        <h2 class="md:text-5xl flex justify-center text-secondary-500 font-bold text-3xl">6,666</h2>
+        <h2 class="flex justify-center text-3xl font-bold md:text-5xl text-secondary-500">6,666</h2>
         <p class="md:text-lg flex justify-center md:mt-2.5 text-white text-base">Quran’s Verses</p>
 
       </div>
-      <div class="flex justify-center flex-col md:w-64 md:border-r md:border-BorderColor">
+      <div class="flex flex-col justify-center md:w-64 md:border-r md:border-BorderColor">
 
-        <h2 class="md:text-5xl flex justify-center text-secondary-500 font-bold text-3xl">86</h2>
+        <h2 class="flex justify-center text-3xl font-bold md:text-5xl text-secondary-500">86</h2>
         <p class="md:text-lg flex justify-center md:mt-2.5 text-white text-base">Makki Surahs</p>
 
       </div>
-      <div class="flex justify-center flex-col md:w-64 md:border-r md:border-BorderColor  mb-10">
+      <div class="flex flex-col justify-center md:w-64">
 
-        <h2 class="md:text-5xl flex justify-center text-secondary-500 font-bold text-3xl">28</h2>
+        <h2 class="flex justify-center text-3xl font-bold md:text-5xl text-secondary-500">28</h2>
         <p class="md:text-lg flex justify-center md:mt-2.5 text-white text-base">Madani Surahs</p>
 
       </div>
@@ -103,61 +125,67 @@
 
 
     <!-- page3 -->
-    <div class="container bg-BackGroundColor mt-20">
-      <div class="flex md:gap-28 md:flex-row flex-col items-center justify-center">
-        <div class="flex md:gap-7 gap-4 items-center">
-          <img src="./img/Pic1.svg" alt="" class="md:mb-8 h-56 mb-6 md:h-auto"><img src="./img/pic2.svg" alt=""
+    <div class="container mt-20 bg-BackGroundColor">
+      <div class="flex flex-col items-center justify-center md:gap-28 md:flex-row">
+        <div class="flex items-center gap-4 md:gap-7">
+          <img src="./img/Pic1.svg" alt="" class="h-56 mb-6 md:mb-8 md:h-auto"><img src="./img/pic2.svg" alt=""
             class="h-56 md:h-auto">
         </div>
         <div class="md:w-2/5 md:mt-9 mt-9">
-          <h2 class="md:text-4xl font-bold text-primary-500 text-2xl"><span
+          <h2 class="text-2xl font-bold md:text-4xl text-primary-500"><span
               class="border-4 rounded-50 border-secondary-500 md:p-1 md:px-2">About</span> holy quran
           </h2>
-          <p class="text-base md:mt-5 text-BorderColor mt-3">The Quran, also romanized Qur'an or Koran, is the
+          <p class="mt-3 text-base md:mt-5 text-BorderColor">The Quran, also romanized Qur'an or Koran, is the
             central
             religious text
             of Islam, believed by
             Muslims to be a revelation from Allah. It is organized in 30 chapters, 114 surahs which
             consist
             of 6666 verses.</p>
-          <p class="text-base mt-4 text-BorderColor">In addition to its religious significance, it is
+          <p class="mt-4 text-base text-BorderColor">In addition to its religious significance, it is
             widely
             regarded as the
             finest work in Arabic
             literature.</p>
           <button
-            class="md:h-12 md:w-40 bg-secondary-500 md:mt-10 rounded-md text-primary-500 font-semibold h-14 w-40 mt-7">Learn
+            class="w-40 font-semibold rounded-md md:h-12 md:w-40 bg-secondary-500 md:mt-10 text-primary-500 h-14 mt-7">Learn
             More</button>
         </div>
       </div>
 
       <!-- page4 -->
-      <div class="md:flex md:justify-center md:mt-40 mt-24">
-        <h2 class="md:text-4xl md:w-1/3 text-center text-primary-500 font-bold leading-normal text-2xl">Read holy quran
+      <div class="mt-24 md:flex md:justify-center md:mt-40">
+        <h2 class="text-2xl font-bold leading-normal text-center md:text-4xl md:w-1/3 text-primary-500">Read holy quran
           with
-          <span class="rounded-50  px-5 border-4 border-secondary-500">translations</span>
+          <span class="px-5 border-4 rounded-50 border-secondary-500">translations</span>
         </h2>
       </div>
-      <div class="flex justify-between items-center mt-3">
-        <div class="flex border border-neutral-300 p-1 rounded-md">
-          <button class="md:h-11 md:w-20 bg-teal-900 text-white rounded-md h-9 w-16 text-xs">Surah</button>
-          <button class="md:h-11 md:w-20 h-9 w-16 text-xs">Juz</button>
+
+
+      <div class="flex items-center justify-between mt-3">
+        <div class="flex p-1 border rounded-md border-neutral-300">
+          <button class="w-16 text-xs text-white bg-teal-900 rounded-md md:h-11 md:w-20 h-9">Surah</button>
+          <button class="w-16 text-xs md:h-11 md:w-20 h-9">Juz</button>
         </div>
         <div>
-          <h2><span class="text-gray-400">Sort by:<span class="text-primary-500 font-semibold text-sm">
+          <h2><span class="text-gray-400">Sort by:<span class="text-sm font-semibold text-primary-500">
                 Ascending</span> <img src="./img/ICONS/Uparrow.svg" alt="" srcset="" class="inline">
           </h2>
         </div>
       </div>
-      <div class="grid md:grid-cols-3 mt-12 md:gap-7 grid-cols-1 gap-4">
+
+      <!-- Cards -->
+      <div class="grid grid-cols-1 gap-4 mt-12 md:grid-cols-3 md:gap-7">
+
+        <!-- Card1 -->
         <div
-          class="bg-white group hover:bg-primary-500 transition-all duration-300 rounded-md h-24 flex items-center justify-between px-5">
+          class="flex items-center justify-between h-24 px-5 transition-all duration-300 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
             <h2
-              class="bg-BackGroundColor group-hover:bg-white h-9 w-9 flex items-center justify-center text-stone-600 rounded-md mr-4">
+              class="flex items-center justify-center mr-4 rounded-md bg-BackGroundColor group-hover:bg-white h-9 w-9 text-stone-600">
               01</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold group-hover:text-white ">Al-Fatihah</h2>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white ">Al-Fatihah</h2>
               <p class="text-sm group-hover:text-white">The Openar</p>
             </div>
           </div>
@@ -166,171 +194,181 @@
             <p class=" text-BorderColor group-hover:text-white">7 verses</p>
           </div>
         </div>
-        <div class="bg-white rounded-md h-24 flex items-center justify-between px-5 hover:bg-primary-500">
+
+        <!-- Card2 -->
+        <div
+          class="flex items-center justify-between h-24 px-5 transition-all duration-300 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
             <h2
-              class="bg-BackGroundColor h-9 w-9 flex group-hover:bg-white items-center justify-center text-stone-600 rounded-md mr-4">
+              class="flex items-center justify-center mr-4 text-gray-600 bg-gray-200 rounded-md h-9 w-9 group-hover:bg-white ">
               02</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold group-hover:text-white">Al-Baqarah</h2>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white">Al-Baqarah</h2>
               <p class="text-sm group-hover:text-white">The Cow</p>
             </div>
           </div>
           <div>
             <h2 class="text-center text-primary-500 group-hover:text-white">البقرة</h2>
-            <p class=" text-BorderColor group-hover:text-white">286 verses</p>
+            <p class="text-gray-400 group-hover:text-white">286 verses</p>
           </div>
         </div>
-        <div class="bg-white rounded-md h-24 flex items-center justify-between px-5">
+
+
+        <!-- Card3 -->
+        <div class="flex items-center justify-between h-24 px-5 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
-            <h2 class="bg-BackGroundColor h-9 w-9 flex items-center justify-center text-stone-600 rounded-md mr-4">
+            <h2
+              class="flex items-center justify-center mr-4 rounded-md bg-BackGroundColor h-9 w-9 text-stone-600 group-hover:bg-white">
               03</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold">Al-Imran</h2>
-              <p class="text-sm">Family of Imran</p>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white">Al-Imran</h2>
+              <p class="text-sm group-hover:text-white">Family of Imran</p>
             </div>
           </div>
           <div>
-            <h2 class="text-center text-primary-500">آل عمران</h2>
-            <p class=" text-BorderColor">200 verses</p>
+            <h2 class="text-center text-primary-500 group-hover:text-white">آل عمران</h2>
+            <p class=" text-BorderColor group-hover:text-white">200 verses</p>
           </div>
         </div>
-        <div class="bg-white rounded-md h-24 flex items-center justify-between px-5">
+
+
+        
+        <div class="flex items-center justify-between h-24 px-5 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
-            <h2 class="bg-BackGroundColor h-9 w-9 flex items-center justify-center text-stone-600 rounded-md mr-4">
+            <h2 class="flex items-center justify-center mr-4 rounded-md bg-BackGroundColor h-9 w-9 text-stone-600 group-hover:bg-white">
               04</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold">An-Nisa</h2>
-              <p class="text-sm">The Women</p>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white">An-Nisa</h2>
+              <p class="text-sm group-hover:text-white">The Women</p>
             </div>
           </div>
           <div>
-            <h2 class="text-center text-primary-500">النساء</h2>
-            <p class=" text-BorderColor">176 verses</p>
+            <h2 class="text-center text-primary-500 group-hover:text-white">النساء</h2>
+            <p class=" text-BorderColor group-hover:text-white">176 verses</p>
           </div>
         </div>
-        <div class="bg-white rounded-md h-24 flex items-center justify-between px-5">
+        <div class="flex items-center justify-between h-24 px-5 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
-            <h2 class="bg-BackGroundColor h-9 w-9 flex items-center justify-center text-primary-500 rounded-md mr-4">
+            <h2 class="flex items-center justify-center mr-4 rounded-md bg-BackGroundColor h-9 w-9 text-primary-500 group-hover:bg-white">
               05</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold">Al-Maidah</h2>
-              <p class="text-sm">The Table Spread</p>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white">Al-Maidah</h2>
+              <p class="text-sm group-hover:text-white">The Table Spread</p>
             </div>
           </div>
           <div>
-            <h2 class="text-center text-primary-500">المائدة</h2>
-            <p class=" text-BorderColor">120 verses</p>
+            <h2 class="text-center text-primary-500 group-hover:text-white">المائدة</h2>
+            <p class=" text-BorderColor group-hover:text-white">120 verses</p>
           </div>
         </div>
-        <div class="bg-white rounded-md h-24 flex items-center justify-between px-5">
+        <div class="flex items-center justify-between h-24 px-5 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
-            <h2 class="bg-BackGroundColor h-9 w-9 flex items-center justify-center text-stone-600 rounded-md mr-4">
+            <h2 class="flex items-center justify-center mr-4 rounded-md bg-BackGroundColor h-9 w-9 text-stone-600 group-hover:bg-white">
               06</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold">Al-Anam</h2>
-              <p class="text-sm">The Cattle</p>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white">Al-Anam</h2>
+              <p class="text-sm group-hover:text-white">The Cattle</p>
             </div>
           </div>
           <div>
-            <h2 class="text-center text-primary-500">الانام</h2>
-            <p class=" text-BorderColor">165 verses</p>
+            <h2 class="text-center text-primary-500 group-hover:text-white">الانام</h2>
+            <p class=" text-BorderColor group-hover:text-white">165 verses</p>
           </div>
         </div>
-        <div class="bg-white rounded-md h-24 flex items-center justify-between px-5">
+        <div class="flex items-center justify-between h-24 px-5 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
-            <h2 class="bg-BackGroundColor h-9 w-9 flex items-center justify-center text-stone-600 rounded-md mr-4">
+            <h2 class="flex items-center justify-center mr-4 rounded-md bg-BackGroundColor h-9 w-9 text-stone-600 group-hover:bg-white">
               07</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold">Al-Araf</h2>
-              <p class="text-sm">The Heights</p>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white">Al-Araf</h2>
+              <p class="text-sm group-hover:text-white">The Heights</p>
             </div>
           </div>
           <div>
-            <h2 class="text-center text-primary-500">العراف</h2>
-            <p class=" text-BorderColor">206 verses</p>
+            <h2 class="text-center text-primary-500 group-hover:text-white">العراف</h2>
+            <p class=" text-BorderColor group-hover:text-white">206 verses</p>
           </div>
         </div>
-        <div class="bg-white rounded-md h-24 flex items-center justify-between px-5">
+        <div class="flex items-center justify-between h-24 px-5 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
-            <h2 class="bg-BackGroundColor h-9 w-9 flex items-center justify-center text-stone-600 rounded-md mr-4">
+            <h2 class="flex items-center justify-center mr-4 rounded-md bg-BackGroundColor h-9 w-9 text-stone-600 group-hover:bg-white">
               08</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold">Al-Anfal</h2>
-              <p class="text-sm">The Spoils of War</p>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white">Al-Anfal</h2>
+              <p class="text-sm group-hover:text-white">The Spoils of War</p>
             </div>
           </div>
           <div>
-            <h2 class="text-center text-primary-500">الأنفال</h2>
-            <p class=" text-BorderColor">75 verses</p>
+            <h2 class="text-center text-primary-500 group-hover:text-white">الأنفال</h2>
+            <p class=" text-BorderColor group-hover:text-white">75 verses</p>
           </div>
         </div>
-        <div class="bg-white rounded-md h-24 flex items-center justify-between px-5">
+        <div class="flex items-center justify-between h-24 px-5 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
-            <h2 class="bg-BackGroundColor h-9 w-9 flex items-center justify-center text-stone-600 rounded-md mr-4">
+            <h2 class="flex items-center justify-center mr-4 rounded-md bg-BackGroundColor h-9 w-9 text-stone-600 group-hover:bg-white">
               09</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold">At-Taubah</h2>
-              <p class="text-sm">The Repentance</p>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white">At-Taubah</h2>
+              <p class="text-sm group-hover:text-white">The Repentance</p>
             </div>
           </div>
           <div>
-            <h2 class="text-center text-primary-500">التوبة</h2>
-            <p class=" text-BorderColor">129 verses</p>
+            <h2 class="text-center text-primary-500 group-hover:text-white">التوبة</h2>
+            <p class=" text-BorderColor group-hover:text-white">129 verses</p>
           </div>
         </div>
-        <div class="bg-white rounded-md h-24 flex items-center justify-between px-5">
+        <div class="flex items-center justify-between h-24 px-5 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
-            <h2 class="bg-BackGroundColor h-9 w-9 flex items-center justify-center text-stone-600 rounded-md mr-4">
+            <h2 class="flex items-center justify-center mr-4 rounded-md bg-BackGroundColor h-9 w-9 text-stone-600 group-hover:bg-white">
               10</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold">Yunus</h2>
-              <p class="text-sm">Jonah</p>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white">Yunus</h2>
+              <p class="text-sm group-hover:text-white">Jonah</p>
             </div>
           </div>
           <div>
-            <h2 class="text-center text-primary-500">يونس</h2>
-            <p class=" text-BorderColor">109 verses</p>
+            <h2 class="text-center text-primary-500 group-hover:text-white">يونس</h2>
+            <p class=" text-BorderColor group-hover:text-white">109 verses</p>
           </div>
         </div>
-        <div class="bg-white rounded-md h-24 flex items-center justify-between px-5">
+        <div class="flex items-center justify-between h-24 px-5 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
-            <h2 class="bg-BackGroundColor h-9 w-9 flex items-center justify-center text-stone-600 rounded-md mr-4">
+            <h2 class="flex items-center justify-center mr-4 rounded-md bg-BackGroundColor h-9 w-9 text-stone-600 group-hover:bg-white">
               11</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold">Hud</h2>
-              <p class="text-sm">Hud</p>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white">Hud</h2>
+              <p class="text-sm group-hover:text-white">Hud</p>
             </div>
           </div>
           <div>
-            <h2 class="text-center text-primary-500">هود</h2>
-            <p class=" text-BorderColor">123 verses</p>
+            <h2 class="text-center text-primary-500 group-hover:text-white">هود</h2>
+            <p class=" text-BorderColor group-hover:text-white">123 verses</p>
           </div>
         </div>
-        <div class="bg-white rounded-md h-24 flex items-center justify-between px-5">
+        <div class="flex items-center justify-between h-24 px-5 bg-white rounded-md group hover:bg-primary-500">
           <div class="flex">
-            <h2 class="bg-BackGroundColor h-9 w-9 flex items-center justify-center text-stone-600 rounded-md mr-4">
+            <h2 class="flex items-center justify-center mr-4 rounded-md bg-BackGroundColor h-9 w-9 text-stone-600 group-hover:bg-white">
               12</h2>
             <div>
-              <h2 class="text-xl text-primary-500 font-semibold">Yusuf</h2>
-              <p class="text-sm">Joseph</p>
+              <h2 class="text-xl font-semibold text-primary-500 group-hover:text-white">Yusuf</h2>
+              <p class="text-sm group-hover:text-white">Joseph</p>
             </div>
           </div>
           <div>
-            <h2 class="text-center text-primary-500">يوسف</h2>
-            <p class=" text-BorderColor">111 verses</p>
+            <h2 class="text-center text-primary-500 group-hover:text-white">يوسف</h2>
+            <p class=" text-BorderColor group-hover:text-white">111 verses</p>
           </div>
         </div>
       </div>
       <div class="flex justify-center md:mt-14 mt-9"><button
-          class="bg-secondary-500 h-12 w-40 rounded-md mb-40 font-semibold text-primary-500">Show
+          class="w-40 h-12 mb-40 font-semibold rounded-md bg-secondary-500 text-primary-500">Show
           more</button></div>
     </div>
 
     <!-- Photo-Part -->
     <!-- md:h-4/5  flex md:flex-row flex-col-reverse -->
-    <div class="bg-primary-500 w-full md:py-24">
-      <div class="mainbox flex flex-col-reverse md:flex-row w-11/12 mx-auto md:mx-0">
+    <div class="w-full bg-primary-500 md:py-24">
+      <div class="flex flex-col-reverse w-11/12 mx-auto mainbox md:flex-row md:mx-0">
         <div class="md:w-7/12 md:flex md:gap-7 md:items-center mt-9 md:mt-0">
           <img src="./img/Person1.svg" alt="" class="hidden md:block">
           <img src="./img/person2.svg" alt="" class="hidden md:block">
@@ -338,32 +376,32 @@
         </div>
         <div>
           <div>
-            <h2 class="font-Manrope font-bold md:text-4xl text-white mt-14 text-2xl md:w-2/3 mx-auto">Listen
-              by your favorite <span class=" border-4 rounded-50 border-secondary-500">Reciters</span>
+            <h2 class="mx-auto text-2xl font-bold text-white font-Manrope md:text-4xl mt-14 md:w-2/3">Listen
+              by your favorite <span class="border-4 rounded-50 border-secondary-500">Reciters</span>
             </h2>
           </div>
           <div>
-            <p class="text-neutral-300 mt-5 md:w-2/3 mx-auto">Listen holy quran by your favourite reciters and
+            <p class="mx-auto mt-5 text-neutral-300 md:w-2/3">Listen holy quran by your favourite reciters and
               feel
               the best
               of quran. </p>
           </div>
 
-          <div class="gap-10 mt-4 hidden md:flex justify-center w-2/3 md:mt-8">
-            <div class="border border-white h-12 w-12 flex justify-center items-center rounded-md ">
-              <img src="./img/ICONS/leftArrow.svg" alt="" srcset="" class="h-4 w-4">
+          <div class="justify-center hidden w-2/3 gap-10 mt-4 md:flex md:mt-8">
+            <div class="flex items-center justify-center w-12 h-12 border border-white rounded-md ">
+              <img src="./img/ICONS/leftArrow.svg" alt="" srcset="" class="w-4 h-4">
             </div>
-            <div class="border border-white h-12 w-12 flex justify-center items-center rounded-md bg-white">
+            <div class="flex items-center justify-center w-12 h-12 bg-white border border-white rounded-md">
               <img src="./img/ICONS/rightArrow.svg" alt="">
             </div>
           </div>
         </div>
       </div>
-      <div class="gap-10 md:mt-4 ml-4 md:hidden flex mt-7 pb-14">
-        <div class="border border-white h-12 w-12 flex justify-center items-center rounded-md">
-          <img src="./img/ICONS/leftArrow.svg" alt="" srcset="" class="h-4 w-4">
+      <div class="flex gap-10 ml-4 md:mt-4 md:hidden mt-7 pb-14">
+        <div class="flex items-center justify-center w-12 h-12 border border-white rounded-md">
+          <img src="./img/ICONS/leftArrow.svg" alt="" srcset="" class="w-4 h-4">
         </div>
-        <div class="border border-white h-12 w-12 flex justify-center items-center rounded-md bg-white">
+        <div class="flex items-center justify-center w-12 h-12 bg-white border border-white rounded-md">
           <img src="./img/ICONS/rightArrow.svg" alt="">
         </div>
       </div>
@@ -374,103 +412,103 @@
     <!-- page6     -->
 
     <div class="bg-white p-0.5">
-      <div class="container mb-36 md:mt-44 mt-24">
+      <div class="container mt-24 mb-36 md:mt-44">
         <div class="">
-          <h2 class="text-primary-500 font-bold md:text-5xl md:w-2/3 mx-auto text-center text-2xl">Latest Islamic <span
-              class=" border-4 rounded-50 border-secondary-500 px-1">blog</span></h2>
-          <p class="md:w-2/6 mx-auto text-center md:mt-5 text-BorderColor mt-3">Read top free Islamic articles & blog
+          <h2 class="mx-auto text-2xl font-bold text-center text-primary-500 md:text-5xl md:w-2/3">Latest Islamic <span
+              class="px-1 border-4 rounded-50 border-secondary-500">blog</span></h2>
+          <p class="mx-auto mt-3 text-center md:w-2/6 md:mt-5 text-BorderColor">Read top free Islamic articles & blog
             posts
             on the Internet and know about islam.</p>
         </div>
-        <div class="grid md:grid-cols-2 gap-7 mt-16 grid-cols-1">
-          <div class="md:h-72 border border-neutral-300 rounded-md flex items-center md:gap-7 gap-4 h-44">
+        <div class="grid grid-cols-1 mt-16 md:grid-cols-2 gap-7">
+          <div class="flex items-center gap-4 border rounded-md md:h-72 border-neutral-300 md:gap-7 h-44">
             <div class="md:ml-4">
-              <img src="./img/Card1.svg" alt="" srcset="" class="md:h-auto p-2 h-full">
+              <img src="./img/Card1.svg" alt="" srcset="" class="h-full p-2 md:h-auto">
             </div>
             <div class="flex flex-col w-2/3">
               <div>
-                <h2 class="font-bold text-primary-500 md:text-xl text-xs">How many times bismillah repeated in
+                <h2 class="text-xs font-bold text-primary-500 md:text-xl">How many times bismillah repeated in
                   Quran?</h2>
               </div>
-              <div class="md:mt-4 mt-3">
-                <hr class="w-9 border-teal-900 md:mb-5 mb-2">
-                <p class="text-BorderColor md:text-sm text-xs">How many times bismillah repeated in Quran? “In the name
+              <div class="mt-3 md:mt-4">
+                <hr class="mb-2 border-teal-900 w-9 md:mb-5">
+                <p class="text-xs text-BorderColor md:text-sm">How many times bismillah repeated in Quran? “In the name
                   of
                   God the most merciful...
                 </p>
               </div>
-              <div class="md:mt-4 text-xs mt-2">
-                <a href="" class="text-primary-500 font-semibold">Read Now</a>
+              <div class="mt-2 text-xs md:mt-4">
+                <a href="" class="font-semibold text-primary-500">Read Now</a>
               </div>
             </div>
           </div>
-          <div class="md:h-72 border border-neutral-300 rounded-md flex items-center md:gap-7 gap-4 h-44">
+          <div class="flex items-center gap-4 border rounded-md md:h-72 border-neutral-300 md:gap-7 h-44">
             <div class="md:ml-4">
-              <img src="./img/Card2.svg" alt="" srcset="" class="md:h-auto p-2 h-full">
+              <img src="./img/Card2.svg" alt="" srcset="" class="h-full p-2 md:h-auto">
             </div>
             <div class="flex flex-col w-2/3">
               <div>
-                <h2 class="font-bold text-primary-500 md:text-xl text-xs">How many times bismillah repeated in
+                <h2 class="text-xs font-bold text-primary-500 md:text-xl">How many times bismillah repeated in
                   Quran?</h2>
               </div>
-              <div class="md:mt-4 mt-3">
-                <hr class="w-9 border-teal-900 md:mb-5 mb-2">
-                <p class="text-BorderColor md:text-sm text-xs">How many times bismillah repeated in Quran? “In the name
+              <div class="mt-3 md:mt-4">
+                <hr class="mb-2 border-teal-900 w-9 md:mb-5">
+                <p class="text-xs text-BorderColor md:text-sm">How many times bismillah repeated in Quran? “In the name
                   of
                   God the most merciful...
                 </p>
               </div>
-              <div class="md:mt-4 text-xs mt-2">
-                <a href="" class="text-primary-500 font-semibold">Read Now</a>
+              <div class="mt-2 text-xs md:mt-4">
+                <a href="" class="font-semibold text-primary-500">Read Now</a>
               </div>
             </div>
           </div>
-          <div class="md:h-72 border border-neutral-300 rounded-md flex items-center md:gap-7 gap-4 h-44">
+          <div class="flex items-center gap-4 border rounded-md md:h-72 border-neutral-300 md:gap-7 h-44">
             <div class="md:ml-4">
-              <img src="./img/Card3.svg" alt="" srcset="" class="md:h-auto p-2 h-full">
+              <img src="./img/Card3.svg" alt="" srcset="" class="h-full p-2 md:h-auto">
             </div>
             <div class="flex flex-col w-2/3">
               <div>
-                <h2 class="font-bold text-primary-500 md:text-xl text-xs">How many times bismillah repeated in
+                <h2 class="text-xs font-bold text-primary-500 md:text-xl">How many times bismillah repeated in
                   Quran?</h2>
               </div>
-              <div class="md:mt-4 mt-3">
-                <hr class="w-9 border-teal-900 md:mb-5 mb-2">
-                <p class="text-BorderColor md:text-sm text-xs">How many times bismillah repeated in Quran? “In the name
+              <div class="mt-3 md:mt-4">
+                <hr class="mb-2 border-teal-900 w-9 md:mb-5">
+                <p class="text-xs text-BorderColor md:text-sm">How many times bismillah repeated in Quran? “In the name
                   of
                   God the most merciful...
                 </p>
               </div>
-              <div class="md:mt-4 text-xs mt-2">
-                <a href="" class="text-primary-500 font-semibold">Read Now</a>
+              <div class="mt-2 text-xs md:mt-4">
+                <a href="" class="font-semibold text-primary-500">Read Now</a>
               </div>
             </div>
           </div>
-          <div class="md:h-72 border border-neutral-300 rounded-md flex items-center md:gap-7 gap-4 h-44">
+          <div class="flex items-center gap-4 border rounded-md md:h-72 border-neutral-300 md:gap-7 h-44">
             <div class="md:ml-4">
-              <img src="./img/Card4.svg" alt="" srcset="" class="md:h-auto p-2 h-full">
+              <img src="./img/Card4.svg" alt="" srcset="" class="h-full p-2 md:h-auto">
             </div>
             <div class="flex flex-col w-2/3">
               <div>
-                <h2 class="font-bold text-primary-500 md:text-xl text-xs">How many times bismillah repeated in
+                <h2 class="text-xs font-bold text-primary-500 md:text-xl">How many times bismillah repeated in
                   Quran?</h2>
               </div>
-              <div class="md:mt-4 mt-3">
-                <hr class="w-9 border-teal-900 md:mb-5 mb-2">
-                <p class="text-BorderColor md:text-sm text-xs">How many times bismillah repeated in Quran? “In the name
+              <div class="mt-3 md:mt-4">
+                <hr class="mb-2 border-teal-900 w-9 md:mb-5">
+                <p class="text-xs text-BorderColor md:text-sm">How many times bismillah repeated in Quran? “In the name
                   of
                   God the most merciful...
                 </p>
               </div>
-              <div class="md:mt-4 text-xs mt-2">
-                <a href="" class="text-primary-500 font-semibold">Read Now</a>
+              <div class="mt-2 text-xs md:mt-4">
+                <a href="" class="font-semibold text-primary-500">Read Now</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="flex justify-center mt-14 "><button
-            class="bg-secondary-500 h-14 w-40 rounded-md text-primary-500 font-bold">Read All</button></div>
+            class="w-40 font-bold rounded-md bg-secondary-500 h-14 text-primary-500">Read All</button></div>
       </div>
     </div>
 
@@ -479,17 +517,17 @@
 
     <div class="bg-primary-500">
       <div class="bg-hero2 ">
-        <div class="md:w-3/5 flex justify-center flex-col mx-auto ">
-          <h2 class="font-bold md:text-4xl text-white text-center md:mt-24 text-2xl mt-12">Recitering Listening quran
+        <div class="flex flex-col justify-center mx-auto md:w-3/5 ">
+          <h2 class="mt-12 text-2xl font-bold text-center text-white md:text-4xl md:mt-24">Recitering Listening quran
             is<br /> more
             <span class="border-4 rounded-50 border-secondary-500">easy</span> now
           </h2>
-          <p class="text-neutral-300 md:w-3/5 w-11/12 text-center mx-auto mt-5">The Quran, also romanized Qur'an or
+          <p class="w-11/12 mx-auto mt-5 text-center text-neutral-300 md:w-3/5">The Quran, also romanized Qur'an or
             Koran,
             is
             the central religious text of Islam, believed by Muslims to be a revelation from Allah.</p>
 
-          <div class="flex justify-center mt-9 gap-5 mb-24">
+          <div class="flex justify-center gap-5 mb-24 mt-9">
             <img src="./img/ICONS/GooglePlay.svg" alt="" class=""><img src="./img/ICONS/Appstore.svg" alt="">
           </div>
         </div>
@@ -498,34 +536,33 @@
     </div>
 
     <footer>
-      <div class="container grid md:grid-cols-5 pb-20  grid-cols-1">
-        <div class="md:mx-auto md:mt-20 mt-12">
+      <div class="container grid grid-cols-1 pb-20 md:grid-cols-5">
+        <div class="mt-12 md:mx-auto md:mt-20">
 
           <img src="./img/quaran-Logo.svg" alt="" srcset="" class="mb-4">
           <p class="text-gray-600">© 2022 UIHUT All Rights Reserved</p>
           <div class="flex gap-4 mt-5">
-            <button
-              class="bg-stone-300 w-11 h-11 flex  justify-center items-center rounded-full hover:bg-secondary-500">
+            <button class="flex items-center justify-center rounded-full bg-stone-300 w-11 h-11 hover:bg-secondary-500">
               <img src="./img/ICONS/FaceBook.svg" alt="" srcset="">
             </button>
-            <button class="bg-stone-300 w-11 h-11 flex justify-center items-center rounded-full hover:bg-secondary-500">
+            <button class="flex items-center justify-center rounded-full bg-stone-300 w-11 h-11 hover:bg-secondary-500">
               <img src="./img/ICONS/linkedIn.svg" alt="" srcset="">
             </button>
-            <button class="bg-stone-300 w-11 h-11 flex justify-center items-center rounded-full hover:bg-secondary-500">
+            <button class="flex items-center justify-center rounded-full bg-stone-300 w-11 h-11 hover:bg-secondary-500">
               <img src="./img/ICONS/twitter.svg" alt="" srcset="">
             </button>
           </div>
 
         </div>
-        <div class=" text-gray-600 flex flex-col gap-3 md:mx-auto md:mt-20 mt-7">
-          <h2 class="text-primary-500 font-semibold">Navigate</h2>
+        <div class="flex flex-col gap-3 text-gray-600 md:mx-auto md:mt-20 mt-7">
+          <h2 class="font-semibold text-primary-500">Navigate</h2>
           <a href="#">Home</a>
           <a href="#">Reciters</a>
           <a href="#">About Us</a>
           <a href="#">Donate</a>
         </div>
-        <div class=" text-gray-600 flex flex-col gap-3 md:mx-auto md:mt-20 mt-7">
-          <h2 class="text-primary-500 font-semibold">Network</h2>
+        <div class="flex flex-col gap-3 text-gray-600 md:mx-auto md:mt-20 mt-7">
+          <h2 class="font-semibold text-primary-500">Network</h2>
           <a href="">QuranicAudio.com</a>
           <a href="">Salah.com</a>
           <a href="">Sunnah.com</a>
@@ -533,8 +570,8 @@
           <a href="">Previous.Quran.com</a>
 
         </div>
-        <div class=" text-gray-600 flex flex-col gap-3 md:mx-auto md:mt-20 mt-7">
-          <h2 class="text-primary-500 font-semibold">Popular Links</h2>
+        <div class="flex flex-col gap-3 text-gray-600 md:mx-auto md:mt-20 mt-7">
+          <h2 class="font-semibold text-primary-500">Popular Links</h2>
           <a href="">Ayatul Kursi</a>
           <a href="">Yaseen</a>
           <a href="">Al Mulk</a>
@@ -543,8 +580,8 @@
           <a href="">Al Kahf</a>
           <a href="">Al Muzzammil</a>
         </div>
-        <div class=" text-gray-600 flex flex-col gap-3 md:mx-auto md:mt-20 mt-7">
-          <h2 class="text-primary-500 font-semibold">Resources</h2>
+        <div class="flex flex-col gap-3 text-gray-600 md:mx-auto md:mt-20 mt-7">
+          <h2 class="font-semibold text-primary-500">Resources</h2>
           <a href="">Mobile Apps</a>
           <a href="">Developers</a>
           <a href="">Product Updates</a>
@@ -552,18 +589,52 @@
           <a href="">Help</a>
         </div>
       </div>
-      <div class="container pb-20">
-        <hr class="border-gray-600 w-full h-5" />
+      <div class="container">
+        <a href="#nav"><button
+            class="flex items-center justify-center float-right w-12 h-12 text-3xl text-white rounded-md bg-primary-500 ">^</button></a>
+        <hr class="w-full h-5 border-gray-600" />
       </div>
+
+      <div class="flex flex-col items-center justify-center pb-20">
+
+        <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+          class="text-gray-600   font-medium  text-sm px-5 py-2.5 text-center inline-flex items-center w-fit"
+          type="button">English <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+
+        <!-- Dropdown menu -->
+        <div id="dropdownMenu"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                out</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
     </footer>
-
-
-    
-    <script src="./index.js" type="module"></script>
-    <script src="main.js" type="module"></script>
-
-
-    <script type="module" src="main.js"></script>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./main.js"></script>
 
 </body>
 

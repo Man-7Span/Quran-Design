@@ -18,3 +18,11 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+const dropdownButton = document.getElementById('dropdownHoverButton');
+const dropdownMenu = document.getElementById('dropdownMenu');
+
+dropdownButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+    
+});

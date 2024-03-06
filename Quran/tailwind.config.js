@@ -31,8 +31,8 @@ module.exports = {
         'buttonBackgroud': '#D1CDB7'
       },
       backgroundImage: {
-        'hero': "url('../img/BackQuran.svg')",
-        'hero2': "url('../img/greenQuran.svg')",
+        'hero': "url('/public/BackQuran.svg')",
+        'hero2': "url('/public/greenQuran.svg')",
       },
       borderRadius: {
         '50': '50%'
